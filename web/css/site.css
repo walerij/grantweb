@@ -113,6 +113,20 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
-.navTopmenu {
-    background: #2f506c;
+
+.navTopSearch {
+    background: #2f506c
 }
+.navTopmenu {
+    background: #6091ba;
+    color: whitesmoke;
+}
+.navTopmenu a {
+
+    color: whitesmoke;
+}
+
+#w2-collapse a
+{color: white;
+
+text-transform: uppercase}
