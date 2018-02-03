@@ -113,3 +113,6 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+.navTopmenu {
+    background: #2f506c;
+}
