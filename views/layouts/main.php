@@ -38,6 +38,38 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
 
+            /*'
+             <div class="col-lg-4 col-sm-3 col-md-6">
+                    <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            '*/
+            '<li>
+                 '
+            . Html::beginForm(['/site/logout'], 'post').
+                '<div class="col-md-4 col-lg-4 input-group">'
+            . Html::textInput('searchField' , '', [
+                    'placeholder'=>'test',
+                'class' =>'form-control'
+
+
+            ])
+                .'<div class="input-group-btn">'
+            . Html::submitButton(
+                'Search',
+                ['class' => 'btn btn-default']
+            ).
+              '</div>
+                 </div>'
+            . Html::endForm()
+            . '</li>'
+
         ],
     ]);
     NavBar::end();
@@ -70,7 +102,7 @@ AppAsset::register($this);
 
             ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Кабинет', 'url' => ['/site/about8']],
-            Yii::$app->user->isGuest ? (
+            /*Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
                 '<li>'
@@ -81,7 +113,8 @@ AppAsset::register($this);
                 )
                 . Html::endForm()
                 . '</li>'
-            )
+            )*/
+
         ],
     ]);
     NavBar::end();

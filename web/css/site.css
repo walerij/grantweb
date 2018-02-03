@@ -130,3 +130,15 @@ a.desc:after {
 {color: white;
 
 text-transform: uppercase}
+#w2-collapse a:hover
+{color: black;
+
+    text-transform: uppercase}
+
+
+#w2-collapse li.active a {
+    color: white;
+    text-transform: uppercase;
+    background: black;
+}
+
