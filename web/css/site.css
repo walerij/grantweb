@@ -126,6 +126,13 @@ a.desc:after {
     color: whitesmoke;
 }
 
+
+.glyph_top{
+    color: #6091ba;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 #w2-collapse a
 {color: white;
 
@@ -141,4 +148,6 @@ text-transform: uppercase}
     text-transform: uppercase;
     background: black;
 }
+
+
 

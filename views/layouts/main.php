@@ -55,14 +55,14 @@ AppAsset::register($this);
             . Html::beginForm(['/site/logout'], 'post').
                 '<div class="col-md-4 col-lg-4 input-group">'
             . Html::textInput('searchField' , '', [
-                    'placeholder'=>'test',
+                    'placeholder'=>'Поиск по сайту',
                 'class' =>'form-control'
 
 
             ])
                 .'<div class="input-group-btn">'
             . Html::submitButton(
-                'Search',
+                'Поиск',
                 ['class' => 'btn btn-default']
             ).
               '</div>
@@ -76,6 +76,48 @@ AppAsset::register($this);
     ?>
 
     <div class="container" style="height: 220px;">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                1
+
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3"></div>
+                    <div class="col-md-5 col-lg-5"></div>
+                    <div class="col-md-4 col-lg-4">Кнопки</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <i class="glyphicon glyphicon-earphone glyph_top"></i>
+                        909-919
+                    </div>
+                    <div class="col-md-5 col-lg-5">
+                        <i class="glyphicon glyphicon-map-marker glyph_top"></i>
+                        г. Хабаровск, ул. Краснореченская, 189
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                      <i class="glyphicon glyphicon-envelope glyph_top"></i>
+                        yk_grand@mail.ru
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <i class="glyphicon glyphicon-earphone glyph_top"></i>
+                        909-929
+                    </div>
+                    <div class="col-md-5 col-lg-5">
+                        <i class="glyphicon glyphicon-map-marker glyph_top"></i>
+                        г. Хабаровск, пер. Засыпной, 14
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <i class="glyphicon glyphicon-envelope glyph_top"></i>
+                        grand-khv@mail.ru
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 
